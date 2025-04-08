@@ -7,12 +7,15 @@
     <title>Days until my Birthday</title>
 </head>
 <body>
-    <div>
-        <label for="birthdate">Выберите дату рождения:</label>
-        <input type="date" name="Birthday" id="birthdate">
-        <button onclick="calculateDays()">Рассчитать</button>
-
-    </div>
+    <div class="container">
+    <h1>Дни до дня рождения</h1>
+    <label for="birthdate">Выберите дату рождения:</label><br>
+    <input type="date" id="birthdate">
+    <br>
+    <button onclick="calculateDays()">Рассчитать</button>
+    <p id="error">Пожалуйста, введите дату рождения!</p>
+    <p id="result"></p>
     <script src="./script/script.js"></script>
+</div>
 </body>
 </html>

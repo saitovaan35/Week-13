@@ -7,10 +7,9 @@ function calculateDays() {
                 error.style.display = "block";
                 result.textContent = "";
                 return;
+            } else {
+                error.style.display = "none";
             }
-            
-            error.style.display = "none";
-            
             const today = new Date();
             const birthdate = new Date(birthdateInput.value);
             birthdate.setFullYear(today.getFullYear());
@@ -24,8 +23,3 @@ function calculateDays() {
             
             result.textContent = `До вашего дня рождения осталось ${daysLeft} дней!`;
         }
-        
-        document.getElementById("birthdate").addEventListener("input", function() {
-            document.getElementById("error").style.display = "none";
-        });
-
